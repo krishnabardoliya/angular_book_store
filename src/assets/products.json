@@ -1,16 +1,16 @@
 [
   {
-    "id": "9aa113b4-1e4e-4cde-bf9d-8358fc78ea4f",
-    "price": 3.50,
-    "name": "Greens",
-    "description": "Looking for simple, clean and green? Four of the most nutrient dense leafy greens create the base in our low-sugar Greens 1.",
+    "id": "power_of_your_subconcious_mind",
+    "price": 79.00,
+    "name": "Power of your subconcious mind",
+    "description": "This remarkable book by Dr. Joseph Murphy, one of the pioneering voices of affirmative thinking, will unlock for you the truly staggering powers of your subconscious mind",
     "ingredients": [
       {
-        "name": "cucumber",
+        "name": "Joseph Murphy",
         "percentage": 50
       },
       {
-        "name": "celery",
+        "name": "Unabridged Start Publishing LLC",
         "percentage": 20
       },
       {
@@ -24,17 +24,17 @@
     ]
   },
   {
-    "id": "bdcbe438-ac85-4acf-8949-5627fd5b57df",
-    "price": 2.75,
-    "name": "Citrus",
-    "description": "This enzyme rich juice is filled with phytonutrients and bromelin which helps to reduce inflammation. Drink it before a meal to get digestive juices flowing.",
+    "id": "how_to_stop_worring_and_start_living",
+    "price": 105.00,
+    "name": "How to stop worrring and start living",
+    "description": "The book is written to help readers by changing their habit of worrying. The author Dale Carnegie has shared his personal experiences, wherein he was mostly unsatisfied and worried about lot of life situations.",
     "ingredients": [
       {
-        "name": "pineapple",
+        "name": "Dale Carnegie",
         "percentage": 50
       },
       {
-        "name": "apple",
+        "name": "Simon and Schuster",
         "percentage": 20
       },
       {
@@ -48,17 +48,17 @@
     ]
   },
   {
-    "id": "58552daa-30f6-46fa-a808-f1a1d7667561",
-    "price": 3,
-    "name": "Roots",
-    "description": "Beets help your body to release stomach acid which aids digestion! Drink this juice when you want a snack that's both pretty and nutritious!",
+    "id": "the_theory_of_everything",
+    "price": 121.00,
+    "name": "The theory of everything",
+    "description": "\"The Theory of Everything\" is a unique opportunity to explore the cosmos with the greatest mind since Einstein. Based on a series of lectures given at Cambridge University, Professor Hawking's work introduced \"the history of ideas about the universe\" as well as today's most important scientific theories about time, space, and the cosmos in a clear, easy-to-understand way.",
     "ingredients": [
       {
-        "name": "apple",
+        "name": "Stephen Hawking",
         "percentage": 50
       },
       {
-        "name": "beetroot",
+        "name": "Unabridged Start Publishing LLC",
         "percentage": 20
       },
       {
@@ -72,17 +72,41 @@
     ]
   },
   {
-    "id": "d4666802-fd84-476f-9eea-c8dd29cfb633",
-    "price": 1.99,
-    "name": "Orange",
-    "description": "Orange juice with a twist to boost you health!",
+    "id": "a_brief_history_of_time",
+    "price": 1424.00,
+    "name": "A brief history of time",
+    "description": "A Brief History of Time plunges into the exotic realms of black holes and quarks, of antimatter and “arrows of time,” of the big bang and a bigger God—where the possibilities are wondrous and unexpected. With exciting images and profound imagination, Stephen Hawking brings us closer to the ultimate secrets at the very heart of creation.",
     "ingredients": [
       {
-        "name": "orange",
+        "name": "Stephen Hawking",
         "percentage": 50
       },
       {
+        "name": "Unabridged Start Publishing LLC",
+        "percentage": 20
+      },
+      {
+        "name": "ginger",
+        "percentage": 20
+      },
+      {
         "name": "lemon",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "id": "atitude_is_everything",
+    "price": 115.00,
+    "name": "Attitude is everything",
+    "description": "Take active steps to turn your dreams into reality. Soon, you will be energized and see new possibilities. You will be able to counter adversities and develop talents unique to you. Your relationships will improve, both at work and in your personal life. All you need is this step-by-step programme to change your attitude and your life!",
+    "ingredients": [
+      {
+        "name": "Jeff keller",
+        "percentage": 50
+      },
+      {
+        "name": "Simon and Schuster",
         "percentage": 20
       },
       {
@@ -96,17 +120,37 @@
     ]
   },
   {
-    "id": "7ef3b9dd-5a95-4415-af37-6871d6ff0262",
-    "price": 2.50,
-    "name": "Coconut",
-    "description": "Cinnamon lovers - this is your blend! Two nutritional powerhouses combine in a delicious, satiating elixir. Both cinnamon and coconut have been shown to reduce blood sugar. Raw coconut meat is a great source of medium chain fatty acids, which can lower bad cholesterol. Coconut also contains significant levels of fiber and manganese, a mineral that helps you metabolize fat and protein.",
+    "id": "the_alchemist",
+    "price": 215.00,
+    "name": "The Alchemist",
+    "description": "Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and inspiring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried in the Pyramids.",
     "ingredients": [
       {
-        "name": "Coconut",
+        "name": "paulo Coelho",
         "percentage": 70
       },
       {
-        "name": "Cinnamon",
+        "name": "Penguin Random House",
+        "percentage": 20
+      },
+      {
+        "name": "water",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "id": "the_intelligent_investor",
+    "price": 350.00,
+    "name": "The intelligent investor",
+    "description": "It is a widely acclaimed book by Benjamin Graham on value investing. Written by one of the greatest investment advisers of twentieth century, the book aims at preventing potential investors from substantial errors and also teaches them strategies to achieve long-term investment goals.",
+    "ingredients": [
+      {
+        "name": "Benjamin Graham",
+        "percentage": 70
+      },
+      {
+        "name": "HarperCollins",
         "percentage": 20
       },
       {
