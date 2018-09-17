@@ -28,4 +28,19 @@ export class ProductsDataService extends CachcingServiceBase {
                     })));
 
     }
+
+    public particular(value_name): Observable<Product[]> {
+        return this.cache<Product[]>(() => this.products,
+            (val: Observable<Product[]>) => this.products = val,
+            () => this.http
+                .get("./assets/products.json")
+                .map((response) => response.json()
+                    .map((item) => {
+                        let model = new Product();
+                        model.updateFrom(item);
+                        return model;
+                    })
+                ));
+
+    }
 }

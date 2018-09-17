@@ -15,6 +15,7 @@ import { Observer } from "rxjs/Observer";
 export class StoreFrontComponent implements OnInit {
   public products: Observable<Product[]>;
   public data;
+  lifeGoals: string = '';
 
   public constructor(private productsService: ProductsDataService,
     private shoppingCartService: ShoppingCartService) {
@@ -41,16 +42,24 @@ export class StoreFrontComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.productsService.all().toPromise((respon)) => {
-      console.log('this.products--->>>', respon);
-    });
+
     this.products = this.productsService.all();
     console.log('this.products--->>>', this.products);
+    console.log(this.productsService)
   }
 
   searchData(value) {
     console.log('search data-->>', value);
+}
 
-    console.log(this.products);
+showField(name) {
+  if(name.toLowerCase().match(this.lifeGoals.toLowerCase())  ) {
+      return true; 
   }
+  else {
+    return false;
+  }
+  
+}
+
 }
