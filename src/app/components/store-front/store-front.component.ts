@@ -5,6 +5,7 @@ import { ProductsDataService } from "app/services/products.service";
 import { ShoppingCartService } from "app/services/shopping-cart.service";
 import { Observable } from "rxjs/Observable";
 import { Observer } from "rxjs/Observer";
+import { Router } from '@angular/router';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -17,7 +18,7 @@ export class StoreFrontComponent implements OnInit {
   public data;
   lifeGoals: string = '';
 
-  public constructor(private productsService: ProductsDataService,
+  public constructor(private router: Router,private productsService: ProductsDataService,
     private shoppingCartService: ShoppingCartService) {
   }
 
@@ -43,13 +44,16 @@ export class StoreFrontComponent implements OnInit {
 
   public ngOnInit(): void {
 
+    if(window.localStorage.getItem('TOKEN_KEY') === null) {
+      this.router.navigate(['login']);
+    } 
     this.products = this.productsService.all();
-    console.log('this.products--->>>', this.products);
-    console.log(this.productsService)
+    // console.log('this.products--->>>', this.products);
+    // console.log(this.productsService)
   }
 
   searchData(value) {
-    console.log('search data-->>', value);
+    // console.log('search data-->>', value);
 }
 
 showField(name) {
@@ -60,6 +64,12 @@ showField(name) {
     return false;
   }
   
+}
+
+logout(){
+  // console.log("logout");
+  window.localStorage.removeItem('TOKEN_KEY');
+  this.router.navigate(['login']);
 }
 
 }

@@ -8,6 +8,7 @@ import { ProductsDataService } from "app/services/products.service";
 import { ShoppingCartService } from "app/services/shopping-cart.service";
 import { Observable } from "rxjs/Observable";
 import { Subscription } from "rxjs/Subscription";
+import { Router } from '@angular/router';
 
 interface ICartItemWithProduct extends CartItem {
   product: Product;
@@ -30,7 +31,8 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 
   public constructor(private productsService: ProductsDataService,
                      private deliveryOptionService: DeliveryOptionsDataService,
-                     private shoppingCartService: ShoppingCartService) {
+                     private shoppingCartService: ShoppingCartService,
+                     private router: Router) {
   }
 
   public emptyCart(): void {
@@ -64,5 +66,11 @@ export class CheckoutComponent implements OnInit, OnDestroy {
     if (this.cartSubscription) {
       this.cartSubscription.unsubscribe();
     }
+  }
+
+  logout(){
+    // console.log("logout");
+    window.localStorage.removeItem('TOKEN_KEY');
+    this.router.navigate(['login']);
   }
 }

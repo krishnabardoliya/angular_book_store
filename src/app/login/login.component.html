@@ -1,0 +1,37 @@
+
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">
+          <h4>
+            <i class="material-icons"></i>
+            Book store
+          </h4>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+<div class="content-center">
+  <div class="content-t">
+
+    <div class="row">
+      <label for="u_name">User name</label>
+      <input type="text" [(ngModel)]="model.username" name="u_name" id="u_name" placeholder="Enter your user name">
+    </div>
+    <div class="row">
+      <label for="password">Password</label>
+      <input type="password" [(ngModel)]="model.password" name="password" id="password" placeholder="Enter your password">
+    </div>
+    <div class="row">
+      <button type="submit" (click)="login()">Login</button>
+    </div>
+    <div class="row pt-2">
+      <span>Dont have an account?</span>
+      <a routerLink="/registration">
+        <span>Register Here</span>
+      </a>
+    </div>
+  </div>
+</div>
